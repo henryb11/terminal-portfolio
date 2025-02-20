@@ -4061,9 +4061,9 @@ ${Object.entries(c).map(([y,P])=>`${g(y,P)} - ${P.description||""}`).join(`
 
 Click any project to view more details.`,isHTML:!0},await _(R);break;case"project":const T=A.split(" ")[1];R=handleProjectCommand(T),await _(R);break;case"contact":R={text:`Contact Information
 -------------------
-Email: <a href="mailto:henry.benn@outlook.com" class="terminal-link">henry.benn@outlook.com</a>
+Email: <a href="mailto:henry.j.benn@gmail.com" class="terminal-link">henry.j.benn@gmail.com</a>
 LinkedIn: <a href="https://linkedin.com/in/henry-benn" target="_blank" class="terminal-link">linkedin.com/in/henry-benn</a>
-GitHub: <a href="https://github.com/hbenn" target="_blank" class="terminal-link">github.com/hbenn</a>
+GitHub: <a href="https://github.com/henryb11" target="_blank" class="terminal-link">github.com/henryb11</a>
 
 Feel free to reach out! I'm always open to interesting conversations and opportunities.`,isHTML:!0},await _(R);break;default:if(l){await _({text:"Processing response...",isAI:!1});try{const y=await h1(A);await _({text:y,isAI:!0})}catch(y){await _({text:`Error: ${y.message}`,isAI:!0})}}else await _({text:`Command not found: ${A}. Type "help" for available commands.`,isAI:!1})}}catch(R){console.error("Error handling command:",R),await _({text:`Error: ${R.message}`,isAI:!0})}},x=async A=>{if(A.key==="Enter"&&!o){const w=t||r.trim();s(""),i(R=>[...R,`> ${w}`]),await v(w)}},b=()=>{var A;(A=f.current)==null||A.focus()};return At.useEffect(()=>{const A=()=>{if(h.current){const w=n[n.length-1];w&&w.text.includes("resume")&&i(R=>{const T=[...R];return T[T.length-1]={text:m(Fp),isAI:!1},T})}};return window.addEventListener("resize",A),()=>window.removeEventListener("resize",A)},[n]),Je.jsx("div",{className:"terminal-window",onClick:b,children:Je.jsxs("div",{className:"terminal-output",ref:h,children:[n.map((A,w)=>Je.jsx("div",{className:`terminal-line ${A.isAI?"ai-response":""}`,...A.isHTML?{dangerouslySetInnerHTML:{__html:A.text}}:{children:A.text}},w)),Je.jsxs("div",{className:"terminal-input-line",children:[!o&&(l?"chat>":">"),Je.jsx("input",{ref:f,type:"text",value:r,onChange:A=>s(A.target.value),onKeyDown:x,disabled:o})]})]})})}const Op=[`
 
