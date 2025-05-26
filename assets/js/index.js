@@ -3952,7 +3952,6 @@ void main() {
 Orlando, FL  \r
 352 978 5552  \r
 henry.j.benn@gmail.com  \r
-[LinkedIn](https://www.linkedin.com/in/henry-benn/)\r
 \r
 ## Professional Summary\r
 Data Professional with specialization in SQL, Python, Snowflake, and a high-level understanding of how data applies to business operations. Strong background in data engineering, machine learning, and executive-facing data visualization.\r
@@ -3963,31 +3962,31 @@ Data Professional with specialization in SQL, Python, Snowflake, and a high-leve
 ## Professional Experience\r
 \r
 ### Data Engineer\r
-**The Walt Disney Company, Orlando, FL** | December 2023 - Present\r
-- **Data Engineering/DevOps:** Managed on-prem Airflow containers for large-scale data orchestration as well as Dev-Ops tools including AWS, Azure, and Snowflake.\r
-- **Visualization Development:** Created executive-facing dashboards using PowerBI, Tableau, and custom solutions.\r
-- **Machine Learning/AI Ops:** Conducted risk analysis, automated incident data summaries, and implemented NLP for advanced data insights. Leveraging AI for advanced monitoring solutions.\r
-- **System Administration:** Administered the team's Snowflake account, optimizing database operations and supporting strategic decision-making.\r
-*Extensively used SQL and Python in all tasks.*\r
+The Walt Disney Company, Orlando, FL | December 2023 - Present\r
+- Data Engineering/DevOps: Managed on-prem Airflow containers for large-scale data orchestration as well as Dev-Ops tools including AWS, Azure, and Snowflake.\r
+- Visualization Development: Created executive-facing dashboards using PowerBI, Tableau, and custom solutions.\r
+- Machine Learning/AI Ops: Conducted risk analysis, automated incident data summaries, and implemented NLP for advanced data insights. Leveraging AI for advanced monitoring solutions.\r
+- System Administration: Administered the team's Snowflake account, optimizing database operations and supporting strategic decision-making.\r
+Extensively used SQL and Python in all tasks.\r
 \r
 ### Data Analyst\r
-**A1 Stone World, Jacksonville, FL** | November 2022 - September 2023\r
-- **Data Analysis & Predictive Modeling**: Skilled in using Python, R, and Excel for analyzing production data, forecasting demand, and optimizing manufacturing processes.\r
-- **Financial Reporting & Analysis**: Proficient in generating financial reports, cost analysis, and budgeting using tools like QuickBooks and SAP to support business decisions.\r
-- **Data Visualization & Reporting**: Adept at creating actionable dashboards with Power BI and Tableau to communicate fabrication metrics and financial insights to management.\r
-- **Process Optimization & Quality Control**: Knowledge of lean manufacturing and statistical process control (SPC) to improve efficiency and ensure product quality.\r
+A1 Stone World, Jacksonville, FL | November 2022 - September 2023\r
+- Data Analysis & Predictive Modeling: Skilled in using Python, R, and Excel for analyzing production data, forecasting demand, and optimizing manufacturing processes.\r
+- Financial Reporting & Analysis: Proficient in generating financial reports, cost analysis, and budgeting using tools like QuickBooks and SAP to support business decisions.\r
+- Data Visualization & Reporting: Adept at creating actionable dashboards with Power BI and Tableau to communicate fabrication metrics and financial insights to management.\r
+- Process Optimization & Quality Control: Knowledge of lean manufacturing and statistical process control (SPC) to improve efficiency and ensure product quality.\r
 \r
 ### Agricultural Analyst\r
-**Goorarooman Farming, Thallon, QLD** | January 2020 - January 2021\r
-- **Data Analysis & Statistical Modeling**: Proficient in analyzing agricultural data using R, SAS, and SPSS to forecast trends and optimize crop/livestock outcomes.\r
-- **Geospatial & Remote Sensing Expertise**: Skilled in GIS (ArcGIS, QGIS) and satellite imagery tools (Sentinel-2, Landsat) for precision agriculture and land-use mapping.\r
-- **Data Visualization & Reporting**: Experienced in creating actionable insights with Tableau and Power BI for stakeholders in farming and agribusiness.\r
-- **Agricultural Knowledge**: Deep understanding of agronomy and sustainable practices to drive data-informed decisions in farm management and policy.\r
+Goorarooman Farming, Thallon, QLD | January 2020 - January 2021\r
+- Data Analysis & Statistical Modeling: Proficient in analyzing agricultural data using R, SAS, and SPSS to forecast trends and optimize crop/livestock outcomes.\r
+- Geospatial & Remote Sensing Expertise: Skilled in GIS (ArcGIS, QGIS) and satellite imagery tools (Sentinel-2, Landsat) for precision agriculture and land-use mapping.\r
+- Data Visualization & Reporting: Experienced in creating actionable insights with Tableau and Power BI for stakeholders in farming and agribusiness.\r
+- Agricultural Knowledge: Deep understanding of agronomy and sustainable practices to drive data-informed decisions in farm management and policy.\r
 \r
 ## Education\r
 \r
 ### Bachelor's Degree\r
-**The University of New South Wales** | Jan 2015 - Jan 2020`;let Er=[];const B2=async t=>{try{console.log("Sending message:",t),t==="START_CHAT"&&(Er=[]),Er.push({role:"user",content:t}),Er.length>8&&(Er=Er.slice(-8));const e=await fetch("http://localhost:3000/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:t,history:Er})});if(!e.ok){const r=await e.json();throw new Error(r.details||"Server error")}const n=await e.json();console.log("Received response:",n);let i=[];if(n.content&&Array.isArray(n.content)){const r=n.content.filter(s=>s.type==="text").map(s=>s.text);i.push(...r),Er.push({role:"assistant",content:r.join(`
+The University of New South Wales | Jan 2015 - Jan 2020`;let Er=[];const B2=async t=>{try{console.log("Sending message:",t),t==="START_CHAT"&&(Er=[]),Er.push({role:"user",content:t}),Er.length>8&&(Er=Er.slice(-8));const e=await fetch("http://localhost:3000/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:t,history:Er})});if(!e.ok){const r=await e.json();throw new Error(r.details||"Server error")}const n=await e.json();console.log("Received response:",n);let i=[];if(n.content&&Array.isArray(n.content)){const r=n.content.filter(s=>s.type==="text").map(s=>s.text);i.push(...r),Er.push({role:"assistant",content:r.join(`
 `)});const o=n.content.find(s=>s.type==="tool_use");if(o&&o.name==="send_email"){const s=[`
 Email Details:`,"To: henry.j.benn@gmail.com",`CC: ${o.input.userEmail}`,`Subject: ${o.input.subject}`,`
 Message:`,`${o.input.message}`].join(`
